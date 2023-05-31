@@ -102,7 +102,23 @@ Q(t+1)=T′Q(t)+TQ(t)′
 ⇒Q(t+1)=T⊕Q(t)
 
 ### Procedure
-/* write all the steps invloved */
+## Step:1
+Open Quartus II and select new project and choose the file location.
+
+## Step:2
+Module Declaration. Module should have the file name.
+
+## Step:3
+Declare Inputs and outputs.
+
+## Step:4
+Use assign declaration and wire to define the functionality of logic circuits.
+
+## Step:5
+End the program with endmodule.
+
+## Step:6
+Run the program and choose RTL viewer to get RTL realization.
 
 
 
@@ -191,7 +207,17 @@ endmodule
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
+## SR FLIP-FLOP
+![image](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/aa52bd84-cf11-4eac-920d-ca3664957ac4)
 
+## JK FLIP-FLOP
+![image](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/035b5304-d056-4208-bbbd-e365a4e4491f)
+
+## T FLIP FLOP
+![image](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/aa3011e7-2740-4112-8ad4-2cae75a7f435)
+
+## D FLIP-FLOP
+![image](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/cb1a49bb-2ed9-4aed-990a-e284e3e03c23)
 
 
 
@@ -200,3 +226,5 @@ endmodule
 
 
 ### RESULTS 
+All the flipflops are implemented using verilog and their functionality has been validated using their functional tables.
+
