@@ -107,12 +107,63 @@ Q(t+1)=T′Q(t)+TQ(t)′
 
 
 ### PROGRAM 
-/*
-Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
 
+```
+Program for flipflops  and verify its truth table in quartus using Verilog programming.
+Developed by: Lavanya M
+RegisterNumber:  212222110021
+```
+## SR FLIP-FLOP
+```
+module sr(s,r,clk,q,qbar);
+input s,r,clk;
+output q,qbar;
+reg q,qbar;
+always @(posedge clk)
+begin
+q<=s|(~r&q);
+qbar<=r|(~s&~q);
+end
+endmodule
+```
+
+## JK FLIP-FLOP
+```
+module jk(j,k,clk,q,qbar);
+input j,k,clk;
+output q,qbar;
+reg q,qbar;
+always @(posedge clk)
+begin
+q<=(j&~q)|(~k&q);
+qbar<=~q;
+end 
+endmodule
+```
+## T FLIP-FLOP
+```
+module t(clk,T,q,qbar);
+input clk,T;
+output q,qbar;
+reg q,qbar;
+always @(posedge clk)
+begin
+q<=(T&~q)|(~T&q);
+qbar<=~q;
+end 
+endmodule
+```
+## D FLIP-FLOP
+module d(d,clk,q,qbar);
+input d,clk;
+output q,qbar;
+reg q,qbar;
+always @(posedge clk)
+begin 
+q<=d;
+qbar<=~q;
+end 
+endmodule
 
 
 
@@ -120,6 +171,17 @@ RegisterNumber:
 
 ### RTL LOGIC FOR FLIPFLOPS 
 
+## SR FLIP-FLOP
+![image](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/d37c64f5-7533-4762-b594-c2ec35c6dfcf)
+
+## JK FLIP-FLOP
+![image](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/8dfb5dd1-41a6-4f4f-9adf-b02145f9084d)
+
+## T FLIP-FLOP
+![image](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/5123dd29-74a3-4fb1-b032-b6a6aca9e50b)
+
+## D FLIP-FLOP
+![image](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/aea6457d-4045-4fe5-8018-64d6cc67ef16)
 
 
 
