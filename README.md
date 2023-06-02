@@ -1,8 +1,8 @@
-# Experiment--05-Implementation-of-flipflops-using-verilog
-### AIM: To implement all the flipflops using verilog and validating their functionality using their functional tables
-### HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
-### SOFTWARE REQUIRED:   Quartus prime
-### THEORY 
+## Experiment--05-Implementation-of-flipflops-using-verilog
+## AIM: To implement all the flipflops using verilog and validating their functionality using their functional tables
+## HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
+## SOFTWARE REQUIRED:   Quartus prime
+## THEORY 
 SR Flip-Flop
 SR flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, SR latch operates with enable signal. The circuit diagram of SR flip-flop is shown in the following figure.
 
@@ -52,7 +52,7 @@ Qt+1t+1 = D
 Next state of D flip-flop is always equal to data input, D for every positive transition of the clock signal. Hence, D flip-flops can be used in registers, shift registers and some of the counters.
 
 
-### JK Flip-Flop
+## JK Flip-Flop
 JK flip-flop is the modified version of SR flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of JK flip-flop is shown in the following figure.
 ![image](https://user-images.githubusercontent.com/36288975/167910378-d2d984a7-2815-4d17-8c41-ee4bdf59ec24.png) 
 
@@ -79,7 +79,7 @@ Q(t+1)=JQ(t)′+K′Q(t)Q(t+1)=JQ(t)′+K′Q(t)
 
 
 
-### T Flip-Flop
+## T Flip-Flop
 T flip-flop is the simplified version of JK flip-flop. It is obtained by connecting the same input ‘T’ to both inputs of JK flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of T flip-flop is shown in the following figure.
 
 ![image](https://user-images.githubusercontent.com/36288975/167911534-5f3c445d-bc68-46e2-9a9c-7efce5febc60.png)
@@ -101,7 +101,7 @@ From the above characteristic table, we can directly write the next state equati
 Q(t+1)=T′Q(t)+TQ(t)′
 ⇒Q(t+1)=T⊕Q(t)
 
-### Procedure
+## Procedure
 ## Step:1
 Open Quartus II and select new project and choose the file location.
 
@@ -122,7 +122,7 @@ Run the program and choose RTL viewer to get RTL realization.
 
 
 
-### PROGRAM 
+## PROGRAM 
 
 ```
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
@@ -190,7 +190,7 @@ endmodule
 
 
 
-### RTL LOGIC FOR FLIPFLOPS 
+## RTL LOGIC FOR FLIPFLOPS 
 
 ## SR FLIP-FLOP
 ![image](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/d37c64f5-7533-4762-b594-c2ec35c6dfcf)
@@ -212,7 +212,7 @@ endmodule
 
 
 
-### TIMING DIGRAMS FOR FLIP FLOPS 
+## TIMING DIGRAMS FOR FLIP FLOPS 
 ## SR FLIP-FLOP
 ![image](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/aa52bd84-cf11-4eac-920d-ca3664957ac4)
 
@@ -231,6 +231,6 @@ endmodule
 
 
 
-### RESULTS 
+## RESULTS 
 All the flipflops are implemented using verilog and their functionality has been validated using their functional tables.
 
