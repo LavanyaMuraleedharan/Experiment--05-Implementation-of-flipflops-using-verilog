@@ -133,12 +133,12 @@ RegisterNumber:  212222110021
 ```
 module sr(s,r,clk,q,qbar);
 input s,r,clk;
-output q,qbar;
-reg q,qbar;
+output reg q;
+output reg qbar;
 always @(posedge clk)
 begin
-q<=s|(~r&q);
-qbar<=r|(~s&~q);
+q=s|(~r&q);
+qbar=r|(~s&~q);
 end
 endmodule
 ```
@@ -217,10 +217,12 @@ endmodule
 ![image](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/aa52bd84-cf11-4eac-920d-ca3664957ac4)
 
 ## JK FLIP-FLOP
-![image](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/035b5304-d056-4208-bbbd-e365a4e4491f)
+![Screenshot (38)](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/343fce07-dd4f-401a-91d9-3a941dd32a85)
+
 
 ## T FLIP FLOP
-![image](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/aa3011e7-2740-4112-8ad4-2cae75a7f435)
+![image](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/778048a5-583c-4c2b-9d49-9894716bf37b)
+
 
 ## D FLIP-FLOP
 ![Screenshot (37)](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/76036564-026e-4b39-b2c2-b6c6029b61cc)
