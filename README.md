@@ -158,15 +158,18 @@ endmodule
 ```
 ## T FLIP-FLOP
 ```
-module t(clk,T,q,qbar);
-input clk,T;
-output q,qbar;
-reg q,qbar;
-always @(posedge clk)
+module t(T,clk,q,qbar);
+input T,clk;
+output reg q;
+output reg qbar;
+initial q=0;
+initial qbar=1;
+always @ (posedge clk)
 begin
-q<=(T&~q)|(~T&q);
-qbar<=~q;
-end 
+q=(T&(~q))|((~T)&q);
+qbar=(~q);
+
+end
 endmodule
 ```
 ## D FLIP-FLOP
@@ -194,7 +197,8 @@ endmodule
 ![image](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/8dfb5dd1-41a6-4f4f-9adf-b02145f9084d)
 
 ## T FLIP-FLOP
-![image](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/5123dd29-74a3-4fb1-b032-b6a6aca9e50b)
+![t wave diagram](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/be6f3d44-8043-4f38-b848-3be68bd96050)
+
 
 ## D FLIP-FLOP
 ![image](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/aea6457d-4045-4fe5-8018-64d6cc67ef16)
