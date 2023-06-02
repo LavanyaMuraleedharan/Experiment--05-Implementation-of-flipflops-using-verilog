@@ -147,12 +147,12 @@ endmodule
 ```
 module jk(j,k,clk,q,qbar);
 input j,k,clk;
-output q,qbar;
-reg q,qbar;
+output reg q;
+output reg qbar;
 always @(posedge clk)
 begin
-q<=(j&~q)|(~k&q);
-qbar<=~q;
+q=(j&(~q))|((~k)&q);
+qbar=((~j)&q)|(k &(~q));
 end 
 endmodule
 ```
@@ -223,9 +223,7 @@ endmodule
 ![image](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/aa3011e7-2740-4112-8ad4-2cae75a7f435)
 
 ## D FLIP-FLOP
-![image](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/cb1a49bb-2ed9-4aed-990a-e284e3e03c23)
-
-
+![Screenshot (37)](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/76036564-026e-4b39-b2c2-b6c6029b61cc)
 
 
 
