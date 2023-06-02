@@ -197,7 +197,7 @@ endmodule
 ![image](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/8dfb5dd1-41a6-4f4f-9adf-b02145f9084d)
 
 ## T FLIP-FLOP
-![t wave diagram](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/be6f3d44-8043-4f38-b848-3be68bd96050)
+![image](https://github.com/LavanyaMuraleedharan/Experiment--05-Implementation-of-flipflops-using-verilog/assets/120103862/dff37a49-9ffe-4e5f-8770-9d5b0c21a09b)
 
 
 ## D FLIP-FLOP
