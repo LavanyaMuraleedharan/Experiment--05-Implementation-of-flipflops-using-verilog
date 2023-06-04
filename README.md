@@ -173,6 +173,7 @@ end
 endmodule
 ```
 ## D FLIP-FLOP
+```
 module d(d,clk,q,qbar);
 input d,clk;
 output reg q;
@@ -186,7 +187,7 @@ qbar=~q;
 end 
 endmodule
 
-
+```
 
 
 
